@@ -1,0 +1,29 @@
+<?php
+	
+	$conn = mysqli_connect('localhost','root','','graduates');
+
+
+	$name = $_POST['name'];
+	$mobile = $_POST['mobile_no'];
+	$email = $_POST['email'];
+	$course = $_POST['course'];
+	$college = $_POST['collage_name'];
+	$state = $_POST['stateslist'];
+	$status = $_POST['status'];
+	$fi = $_POST['future_course'];
+
+	$query = "INSERT INTO `student`(`NAME`, `MOBILE`, `EMAIL`, `COURSE`, `COLLEGE`, `STATE`, `STATUS`, `FUTURE INT`) VALUES ('$name','$mobile','$email','$course','$college','$state','$status','$fi')";
+
+	$run = mysqli_query($conn,$query);
+
+	if($run == true)
+	{
+		echo "Data inserted successfully";
+	}
+	else
+	{
+		echo "Error....!";
+	}
+
+
+?>

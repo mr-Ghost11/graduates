@@ -1,0 +1,221 @@
+<html>
+<head>
+<title> Graduates.com</title>
+<link rel="icon" href="images/hat1.png" type="png" size="16*16">
+<link rel="stylesheet" type="text/css" href="style1.css" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<script src="javascript1.js"> </script>
+</head>
+
+<body>
+
+	<div class="logo">
+		<img src="images/hat1.png">
+	</div>
+	
+<section class="section-class">
+<div class="main-content">
+<div class="container">
+
+<fieldset class="enquiry-main">
+<legend><p>Update your Graduation details</p></legend>
+<form name="myForm" onsubmit=" return myfun()" action="nxtpage.php" method="post">		
+	
+	<!--Select course-->
+	<div class="enquiry-form-row">
+	    <div class="enquiry-form-row-title"> Select Your Course: </div>
+		
+		<div class="enquiry-form-row-field">	
+		  
+			<div class="custom-control custom-radiobox enquiry-checkbox">
+			 <input type="radio" name="course" value="Agriculture" required>Agriculture
+			</div>
+			
+			<div class="custom-control custom-radiobox enquiry-checkbox">
+			 <input type="radio" name="course" value="Architecture">Architecture
+			</div>
+			
+			<div class="custom-control custom-radiobox enquiry-checkbox">
+			 <input type="radio" name="course" value="BA">BA
+			</div>
+			
+			<div class="custom-control custom-radiobox enquiry-checkbox">
+			 <input type="radio" name="course" value="B.Com">B.Com
+			</div>
+			
+			<div class="custom-control custom-radiobox enquiry-checkbox">
+			 <input type="radio" name="course" value="B.Sc">B.Sc
+			</div>
+			
+			<div class="custom-control custom-radiobox enquiry-checkbox">
+			 <input type="radio" name="course" value="BBA">BBA
+			</div>
+			
+			<div class="custom-control custom-radiobox enquiry-checkbox">
+			 <input type="radio" name="course" value="BCA">BCA
+			</div>
+			
+			<div class="custom-control custom-radiobox enquiry-checkbox">
+			 <input type="radio" name="course" value="BDS">BDS
+			</div>
+			
+			<div class="custom-control custom-radiobox enquiry-checkbox">
+			 <input type="radio" name="course" value="Design/Fashion">Design/Fashion
+			</div>
+			
+			<div class="custom-control custom-radiobox enquiry-checkbox">
+			 <input type="radio" name="course" value="Engineering">Engineering
+			</div>
+			
+			<div class="custom-control custom-radiobox enquiry-checkbox">
+			 <input type="radio" name="course" value="Hotel Mgmt">Hotel Mgmt
+			</div>
+			
+			<div class="custom-control custom-radiobox enquiry-checkbox">
+			 <input type="radio" name="course" value="Law">Law
+			</div>
+			
+			<div class="custom-control custom-radiobox enquiry-checkbox">
+			 <input type="radio" name="course" value="MBA">MBA
+			</div>
+			
+			<div class="custom-control custom-radiobox enquiry-checkbox">
+			 <input type="radio" name="course" value="MBBS">MBBS
+			</div>
+		 </div>
+	</div>
+
+	<!--Personal Details-->
+	<div class="enquiry-form-row">
+		<div class="enquiry-form-row-title"> Personal Details: </div>
+	    <div class="enquiry-form-row-field">
+			<div class="row">
+				<!--Name-->
+				<div class="form-col">
+					<div class="form-group">		
+					<input type="text" name="name" class="form-control" placeholder="Enter your name" required>
+					</div>
+				</div>
+				
+				<!--Mobile_No-->
+				<div class="form-col">
+					<div class="form-group">		
+					<input type="text" name="mobile_no" class="form-control" placeholder="Enter your Mobile No." onkeypress='return event.charCode >= 48 && event.charCode <= 57' required>
+					</div>
+				</div>
+				
+				<!--email-->
+				<div class="form-col">
+					<div class="form-group">		
+					<input type="email" name="email" class="form-control" placeholder="Enter your Email ID" required>
+					</div>
+				</div>	
+			</div>
+	    </div>
+    </div>
+	
+	<!--College Details-->
+	<div class="enquiry-form-row">
+		<div class="enquiry-form-row-title"> College Details: </div>
+	    <div class="enquiry-form-row-field">
+			<div class="row">
+				<!--College-name-->
+				<div class="form-col">
+					<div class="form-group">		
+						<input type="text" name="collage_name" class="form-control" placeholder="Enter your College name" required>
+					</div>
+				</div>
+				
+				<!--Select state-->
+				<div class="form-col">
+					<div class="form-group">	
+						<select name="stateslist" required>
+						<option value="" class="first-option">Select State</option>
+						<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+						<option value="Andhra Pradesh">Andhra Pradesh</option>
+						<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+						<option value="Assam">Assam</option>
+						<option value="Bihar">Bihar</option>
+						<option value="Chandigarh">Chandigarh</option>
+						<option value="Chhattisgarh">Chhattisgarh</option>
+						<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+						<option value="Daman and Diu">Daman and Diu</option>
+						<option value="Delhi">Delhi</option>
+						<option value="Goa">Goa</option>
+						<option value="Gujarat">Gujarat</option>
+						<option value="Haryana">Haryana</option>
+						<option value="Himachal Pradesh">Himachal Pradesh</option>
+						<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+						<option value="Jharkhand">Jharkhand</option>
+						<option value="Karnataka">Karnataka</option>
+						<option value="Kerala">Kerala</option>
+						<option value="Lakshadweep">Lakshadweep</option>
+						<option value="Madhya Pradesh">Madhya Pradesh</option>
+						<option value="Maharashtra">Maharashtra</option>
+						<option value="Manipur">Manipur</option>
+						<option value="Meghalaya">Meghalaya</option>
+						<option value="Mizoram">Mizoram</option>
+						<option value="Nagaland">Nagaland</option>
+						<option value="Orissa">Orissa</option>
+						<option value="Pondicherry">Pondicherry</option>
+						<option value="Punjab">Punjab</option>
+						<option value="Rajasthan">Rajasthan</option>
+						<option value="Sikkim">Sikkim</option>
+						<option value="Tamil Nadu">Tamil Nadu</option>
+						<option value="Tripura">Tripura</option>
+						<option value="Uttaranchal">Uttaranchal</option>
+						<option value="Uttar Pradesh">Uttar Pradesh</option>
+						<option value="West Bengal">West Bengal</option>
+						</select>
+					</div>
+				</div>
+				<!--Current status-->
+				<div class="form-col">
+					<div class="form-group">		
+						<select name="status" required>
+							<option value="" class="first-option">Current Status</option>
+							<option value="fy">First year Completed</option>
+							<option value="sy">Second year completed</option>
+							<option value="ty">Third year completed</option>
+							<option value="2017">2017 Passed </option>
+							<option value="2018">2018 Passed </option>
+							<option value="2019">2019 Passing </option>
+						</select>
+					</div>
+				</div>
+				
+			</div>
+	    </div>
+    </div>
+	
+	
+	<!--Future Interest-->
+	<div class="enquiry-form-row">
+		<div class="enquiry-form-row-title" > Future Interest: </div>
+	    <div class="enquiry-form-row-field">	
+		  
+			<div class="custom-control custom-radiobox enquiry-checkbox">
+			 <input type="radio" name="future_course" value="job" required>Job in India
+			</div>
+			
+			<div class="custom-control custom-radiobox enquiry-checkbox">
+			 <input type="radio" name="future_course" value="edu-india">Higher Education in India
+			</div>
+			
+			<div class="custom-control custom-radiobox enquiry-checkbox">
+			 <input type="radio" name="future_course" value="edu-abroad">Higher Education in Abroad
+			</div>
+		</div>
+	</div>
+	
+	
+	<button type="submit" class="submit-btn" onclick="myfun()">SUBMIT</button>
+</form>
+</fieldset>
+
+</div>
+</div>
+</section>
+</body>
+</html>
